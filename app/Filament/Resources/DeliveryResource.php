@@ -168,7 +168,7 @@ class DeliveryResource extends Resource
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
+                  //  Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -184,8 +184,8 @@ class DeliveryResource extends Resource
     {
         return [
             'index' => Pages\ListDeliveries::route('/'),
-            'create' => Pages\CreateDelivery::route('/create'),
-            'edit' => Pages\EditDelivery::route('/{record}/edit'),
+            //'create' => Pages\CreateDelivery::route('/create'),
+            //'edit' => Pages\EditDelivery::route('/{record}/edit'),
         ];
     }
 }
